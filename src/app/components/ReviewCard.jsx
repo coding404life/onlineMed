@@ -39,7 +39,7 @@ const ReviewCard = ({
 
   return (
     <div
-      className={`max-w-md mx-auto bg-white p-4 rounded-xs  transform transition-all duration-300 ${
+      className={`max-w-md bg-white p-4 rounded-xs  transform transition-all duration-300 ${
         isShuffling ? "scale-95 opacity-70" : "scale-100 opacity-100"
       }`}
     >
