@@ -13,20 +13,24 @@ const EmailVerification = () => {
 
   // Debounce email input
   useEffect(() => {
-    const handler = setTimeout(() => {
+    const showLoadingEffectHandler = setTimeout(() => {
       if (email && email.includes("@")) {
         setLoading(true);
         setDebouncedEmail(email);
       }
-    }, 1000);
+    }, 500);
 
-    return () => clearTimeout(handler);
+    return () => clearTimeout(showLoadingEffectHandler);
   }, [email]);
 
   useEffect(() => {
     if (!debouncedEmail) return;
 
-    setShowEmailVerification(true);
+    const showEmailHandler = setTimeout(() => {
+      setShowEmailVerification(true);
+    }, 2000);
+
+    return () => clearTimeout(showEmailHandler);
   }, [debouncedEmail]);
 
   const handleChangeEmail = () => {
