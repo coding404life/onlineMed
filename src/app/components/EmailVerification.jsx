@@ -1,9 +1,10 @@
 "use client";
+
 import { useState, useEffect } from "react";
 import React from "react";
 import { motion } from "framer-motion";
 import CodeInput from "./CodeInput";
-import Image from "next/image";
+import Spinner from "../partials/Spinner";
 
 const EmailVerification = () => {
   const [email, setEmail] = useState("");
@@ -54,13 +55,7 @@ const EmailVerification = () => {
           />
 
           {loading && (
-            <Image
-              src="loading-spinner.svg"
-              className="absolute right-3 top-1/2 transform -translate-y-1/2 animate-spin"
-              width={20}
-              height={20}
-              alt="Loading"
-            />
+            <Spinner className="absolute right-3 top-1/2 transform -translate-y-1/2" />
           )}
         </div>
       )}

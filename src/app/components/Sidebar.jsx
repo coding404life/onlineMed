@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import ReviewCard from "./ReviewCard";
 import Image from "next/image";
+import Button from "../partials/Button";
 
 const reviews = [
   {
@@ -79,12 +80,12 @@ const Sidebar = ({ setNextStep }) => {
       </div>
 
       <div className="my-auto flex justify-end sm:hidden">
-        <button
-          className="bg-primary-blue text-white rounded-lg hover:bg-gray transition cursor-pointer lg:max-w-full  min-w-32 py-3.5 px-2 font-bold"
+        <Button
           onClick={() => setNextStep(true)}
+          className="w-20 lg:max-w-full lg:min-w-32 py-3.5 px-2"
         >
           Next
-        </button>
+        </Button>
       </div>
       <div className="mt-auto">
         <ReviewCard

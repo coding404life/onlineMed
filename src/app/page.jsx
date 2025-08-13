@@ -4,6 +4,7 @@ import Image from "next/image";
 import Sidebar from "./components/Sidebar";
 import EmailVerification from "./components/EmailVerification";
 import { useState } from "react";
+import Button from "./partials/Button";
 
 export default function Home() {
   const [nextStep, setNextStep] = useState(false);
@@ -44,9 +45,9 @@ export default function Home() {
               <span>Back</span>
             </button>
 
-            <button className="bg-primary-blue text-white rounded-lg hover:bg-gray transition cursor-pointer w-20 lg:max-w-full lg:min-w-32 py-3.5 px-2 font-bold">
+            <Button className="w-20 lg:max-w-full lg:min-w-32 py-3.5 px-2">
               Next
-            </button>
+            </Button>
           </div>
         </div>
       </main>
