@@ -1,3 +1,5 @@
+<img width="2326" height="1367" alt="image" src="https://github.com/user-attachments/assets/60e6a5d2-83ea-4130-9ce3-b054aa1d3864" />
+
 # OnlineMed
 
 A modern, responsive multi-step form web app for online medical note requests. Built with Next.js, React, and Tailwind CSS.
